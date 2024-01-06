@@ -6,7 +6,10 @@
 # pseudocode
 # Ask user to input number 1
 first_number = float(input("Enter first number: "))
+
 # Ask user to input number 2
+second_number = float(input("Enter second number"))
+
 # Ask user to input number 3
 # Find highest among the inputted numbers using if-else statement
 # Diplay the highest number
