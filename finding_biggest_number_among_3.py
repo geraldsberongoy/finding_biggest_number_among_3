@@ -15,8 +15,6 @@ window.title("Highest Number")
 window.geometry("360x480")
 window.resizable(width=False, height=False)
 
-frame = customtkinter.CTkFrame(window, width=360, height=480)
-frame.pack(expand=True, side="right")
 
 # Functions
 def highest_of_three(first_number, second_number, third_number):
