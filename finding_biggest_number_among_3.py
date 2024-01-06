@@ -3,6 +3,19 @@
 # Ask user to input 3 numbers. Find and print the 
 # biggest number using only if-else statement
 
+#import
+import customtkinter
+from tkinter import *
+
+
+customtkinter.set_appearance_mode("dark")
+
+window = customtkinter.CTk()
+window.title("Highest Number")
+window.geometry("360x480")
+window.resizable(width=False, height=False)
+
+
 # Functions
 def highest_of_three(first_number, second_number, third_number):
     if first_number > second_number and first_number > third_number:
@@ -27,3 +40,5 @@ highest_number = highest_of_three(first_number, second_number, third_number)
 
 # Diplay the highest number
 print(f"The highest number is {highest_number:.2f}")
+
+window.mainloop()
