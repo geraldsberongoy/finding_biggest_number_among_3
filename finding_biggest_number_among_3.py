@@ -15,9 +15,10 @@ third_number = float(input("Enter third number: "))
 
 # Find highest among the inputted numbers using if-else statement
 if first_number > second_number and first_number > third_number:
-    print(first_number)
+    highest = first_number
 elif second_number > first_number and second_number> third_number:
-    print(second_number)
+    highest = second_number
 else:
-    print(third_number)
+    highest = third_number
 # Diplay the highest number
+print(f"The highest number is: {highest:.2f}")
