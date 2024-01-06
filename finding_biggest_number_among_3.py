@@ -11,5 +11,7 @@ first_number = float(input("Enter first number: "))
 second_number = float(input("Enter second number"))
 
 # Ask user to input number 3
+third_number = float(input("Enter third number"))
+
 # Find highest among the inputted numbers using if-else statement
 # Diplay the highest number
