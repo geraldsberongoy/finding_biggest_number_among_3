@@ -18,6 +18,8 @@ window.resizable(width=False, height=False)
 entry_first_number = customtkinter.CTkEntry(window, placeholder_text="Enter the first number", placeholder_text_color="white"	, corner_radius=10, width=300, height=30)
 entry_first_number.place(relx=0.5, rely=0.3, anchor=CENTER)
 
+entry_second_number = customtkinter.CTkEntry(window, placeholder_text="Enter the second number",placeholder_text_color="white", corner_radius=10, width=300, height=30)
+entry_second_number.place(relx=0.5, rely=0.4, anchor=CENTER)
 # Functions
 def highest_of_three(first_number, second_number, third_number):
     if first_number >= second_number and first_number >= third_number:
