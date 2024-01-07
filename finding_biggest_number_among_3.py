@@ -21,12 +21,15 @@ def determine():
     if any (entry == "" for entry in (entry_first_number.get(), entry_second_number.get(), entry_third_number.get())):
             messagebox.showerror("Error", "Please enter all the field.")
             return
-     
-    first_number = float(entry_first_number.get())
-    second_number = float(entry_second_number.get())
-    third_number = float(entry_third_number.get())
-    messagebox.showinfo("Submitted", "The highest number has been determined.")
-    
+    try:
+        first_number = float(entry_first_number.get())
+        second_number = float(entry_second_number.get())
+        third_number = float(entry_third_number.get())
+        messagebox.showinfo("Submitted", "The highest number has been determined.")
+        
+    except ValueError:
+        messagebox.showerror("Error", "Oppps! Please enter valid numeric values.")
+        return
     
     def highest_of_three(first_number, second_number, third_number):
         if first_number >= second_number and first_number >= third_number:
