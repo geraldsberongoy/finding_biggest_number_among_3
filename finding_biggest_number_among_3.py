@@ -41,6 +41,9 @@ entry_third_number.place(relx=0.5, rely=0.5, anchor=CENTER)
 
 calculate_button = customtkinter.CTkButton(window, text="Determine", text_color="black", font=('Open Sans', 20, 'bold'), command="", fg_color="#E1A3FF", width=300, height=30)
 calculate_button.place(relx=0.5, rely=0.6, anchor=CENTER)
+
+frame_result = customtkinter.CTkFrame(window, border_width=2, border_color="black", width=320, height=140)
+frame_result.place(relx=0.5, rely=0.81, anchor=CENTER)
 # pseudocode
 # Ask user to input number 1
 first_number = float(input("Enter first number: "))
