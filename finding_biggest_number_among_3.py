@@ -50,6 +50,10 @@ result_label.place(relx=0.5, rely=0.12, anchor=CENTER)
 
 number_text_label = customtkinter.CTkLabel(frame_result, text="")
 number_text_label.place(relx=0.5, rely=0.4, anchor=CENTER)
+
+highest_number_label = customtkinter.CTkLabel(frame_result, text="")
+highest_number_label.place(relx=0.5, rely=0.65, anchor=CENTER)
+
 # pseudocode
 # Ask user to input number 1
 first_number = float(input("Enter first number: "))
