@@ -26,7 +26,7 @@ def highest_of_three(first_number, second_number, third_number):
         return third_number
 # GUI WIDGETS
 
-banner_image = customtkinter.CTkImage(Image.open("banner.png"), size=(320, 100),  corner_radius=100)
+banner_image = customtkinter.CTkImage(Image.open("banner.png"), size=(320, 100))
 label_banner_image = customtkinter.CTkLabel(window, text="", image=banner_image, corner_radius=100)
 label_banner_image.place(relx=0.5, rely=0.13, anchor=CENTER)
 
@@ -38,7 +38,9 @@ entry_second_number.place(relx=0.5, rely=0.4, anchor=CENTER)
 
 entry_third_number = customtkinter.CTkEntry(window, placeholder_text="Enter the third number",placeholder_text_color="white", corner_radius=10, width=300, height=30)
 entry_third_number.place(relx=0.5, rely=0.5, anchor=CENTER)
-    
+
+calculate_button = customtkinter.CTkButton(window, text="Determine", text_color="black", font=('Open Sans', 20, 'bold'), command="", fg_color="#E1A3FF", width=300, height=30)
+calculate_button.place(relx=0.5, rely=0.6, anchor=CENTER)
 # pseudocode
 # Ask user to input number 1
 first_number = float(input("Enter first number: "))
