@@ -40,8 +40,8 @@ def determine():
             return third_number
         
     highest_number = highest_of_three(first_number, second_number, third_number)
-    number_text_label.configure(text="The highest number is:")
-    highest_number_label.configure(text=(highest_number), font=('Helvetica', 20, 'bold'), text_color="#D21404")
+    number_text_label.configure(text="The highest number is:", font=('Helvetica', 15))
+    highest_number_label.configure(text=(highest_number), font=('Helvetica', 30, 'bold'), text_color="#D21404")
         
 # GUI WIDGETS
 
@@ -65,12 +65,13 @@ entry_third_number.place(relx=0.5, rely=0.5, anchor=CENTER)
 determine_button = customtkinter.CTkButton(window, text="Determine", text_color="black", font=('Open Sans', 20, 'bold'), command= determine, fg_color="#E1A3FF", width=300, height=30)
 determine_button.place(relx=0.5, rely=0.6, anchor=CENTER)
 
+# Frame for the result
 frame_result = customtkinter.CTkFrame(window, border_width=2, border_color="black", width=320, height=140)
 frame_result.place(relx=0.5, rely=0.81, anchor=CENTER)
 
 # Diplay the highest number                  
 result_label = customtkinter.CTkLabel(frame_result, text="Result", font=('Helvetica', 26, 'bold'))
-result_label.place(relx=0.5, rely=0.12, anchor=CENTER)
+result_label.place(relx=0.5, rely=0.15, anchor=CENTER)
 
 number_text_label = customtkinter.CTkLabel(frame_result, text="")
 number_text_label.place(relx=0.5, rely=0.4, anchor=CENTER)
