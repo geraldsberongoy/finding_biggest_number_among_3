@@ -53,7 +53,6 @@ def clear_entries():
     highest_number_label.configure(text="")
      
 # GUI WIDGETS
-
 #Image
 banner_image = customtkinter.CTkImage(Image.open("banner.png"), size=(320, 100))
 label_banner_image = customtkinter.CTkLabel(window, text="", image=banner_image, corner_radius=100)
