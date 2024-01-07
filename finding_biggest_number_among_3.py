@@ -42,7 +42,14 @@ def determine():
     highest_number = highest_of_three(first_number, second_number, third_number)
     number_text_label.configure(text="The highest number is:", font=('Helvetica', 15))
     highest_number_label.configure(text=(highest_number), font=('Helvetica', 30, 'bold'), text_color="#D21404")
-        
+
+def clear_entries():
+    entry_first_number.delete(0, END)
+    entry_second_number.delete(0, END)
+    entry_third_number.delete(0, END)
+    number_text_label.configure(text="")
+    highest_number_label.configure(text="")
+     
 # GUI WIDGETS
 
 banner_image = customtkinter.CTkImage(Image.open("banner.png"), size=(320, 100))
@@ -65,7 +72,7 @@ entry_third_number.place(relx=0.5, rely=0.5, anchor=CENTER)
 determine_button = customtkinter.CTkButton(window, text="Determine", text_color="black", font=('Helvetica', 15, "bold"), command= determine, fg_color="#bb86fc", width=145, height=30)
 determine_button.place(relx=0.27, rely=0.6, anchor=CENTER)
 
-clear_button = customtkinter.CTkButton(window, text="Clear", text_color="white", font=('Helvetica', 15, "bold"), command="", fg_color="#3a2d49", width=145, height=30)
+clear_button = customtkinter.CTkButton(window, text="Clear", text_color="white", font=('Helvetica', 15, "bold"), command=clear_entries, fg_color="#3a2d49", width=145, height=30)
 clear_button.place(relx=0.72, rely=0.6, anchor=CENTER) 
 
 # Frame for the result
