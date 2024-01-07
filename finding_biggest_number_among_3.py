@@ -9,8 +9,10 @@ from tkinter import *
 from tkinter import messagebox
 from PIL import Image
 
+#themes
 customtkinter.set_appearance_mode("dark")
 
+#main window
 window = customtkinter.CTk()
 window.title("Highest Number")
 window.geometry("360x480")
@@ -52,6 +54,7 @@ def clear_entries():
      
 # GUI WIDGETS
 
+#Image
 banner_image = customtkinter.CTkImage(Image.open("banner.png"), size=(320, 100))
 label_banner_image = customtkinter.CTkLabel(window, text="", image=banner_image, corner_radius=100)
 label_banner_image.place(relx=0.5, rely=0.13, anchor=CENTER)
@@ -88,21 +91,5 @@ number_text_label.place(relx=0.5, rely=0.4, anchor=CENTER)
 
 highest_number_label = customtkinter.CTkLabel(frame_result, text="")
 highest_number_label.place(relx=0.5, rely=0.65, anchor=CENTER)
-
-# # pseudocode
-# # Ask user to input number 1
-# first_number = float(input("Enter first number: "))
-
-# # Ask user to input number 2
-# second_number = float(input("Enter second number: "))
-
-# # Ask user to input number 3
-# third_number = float(input("Enter third number: "))
-
-# # Function that finds the highest among the inputted numbers using if-else statement
-# highest_number = highest_of_three(first_number, second_number, third_number)
-
-# # Diplay the highest number
-# print("The highest number is ", highest_number)")
 
 window.mainloop()
