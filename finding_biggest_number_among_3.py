@@ -31,7 +31,8 @@ def determine():
             return third_number
         
     highest_number = highest_of_three(first_number, second_number, third_number)
-    print(highest_number)
+    number_text_label.configure(text="The highest number is:")
+    highest_number_label.configure(text=(highest_number), font=('Helvetica', 20, 'bold'), text_color="#D21404")
         
 # GUI WIDGETS
 
