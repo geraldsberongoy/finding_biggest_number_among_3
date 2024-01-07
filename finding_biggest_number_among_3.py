@@ -20,15 +20,18 @@ def determine():
     first_number = float(entry_first_number.get())
     second_number = float(entry_second_number.get())
     third_number = float(entry_third_number.get())
-    print (first_number, second_number, third_number)
     
-def highest_of_three(first_number, second_number, third_number):
-    if first_number >= second_number and first_number >= third_number:
-        return first_number
-    elif second_number >= first_number and second_number >= third_number:
-        return second_number
-    else:
-        return third_number
+    
+    def highest_of_three(first_number, second_number, third_number):
+        if first_number >= second_number and first_number >= third_number:
+            return first_number
+        elif second_number >= first_number and second_number >= third_number:
+            return second_number
+        else:
+            return third_number
+        
+    highest_number = highest_of_three(first_number, second_number, third_number)
+    print(highest_number)
         
 # GUI WIDGETS
 
