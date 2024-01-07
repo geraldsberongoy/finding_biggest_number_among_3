@@ -44,6 +44,9 @@ calculate_button.place(relx=0.5, rely=0.6, anchor=CENTER)
 
 frame_result = customtkinter.CTkFrame(window, border_width=2, border_color="black", width=320, height=140)
 frame_result.place(relx=0.5, rely=0.81, anchor=CENTER)
+                   
+result_label = customtkinter.CTkLabel(frame_result, text="Result", font=('Helvetica', 26, 'bold'))
+result_label.place(relx=0.5, rely=0.12, anchor=CENTER)
 # pseudocode
 # Ask user to input number 1
 first_number = float(input("Enter first number: "))
