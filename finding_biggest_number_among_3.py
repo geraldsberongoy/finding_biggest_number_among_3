@@ -17,6 +17,11 @@ window.geometry("360x480")
 window.resizable(width=False, height=False)
 
 # Functions
+def determine():
+    first_number = float(entry_first_number.get())
+    second_number = float(entry_second_number.get())
+    third_number = float(entry_third_number.get())
+    print (first_number, second_number, third_number)
 def highest_of_three(first_number, second_number, third_number):
     if first_number >= second_number and first_number >= third_number:
         return first_number
@@ -39,8 +44,8 @@ entry_second_number.place(relx=0.5, rely=0.4, anchor=CENTER)
 entry_third_number = customtkinter.CTkEntry(window, placeholder_text="Enter the third number",placeholder_text_color="white", corner_radius=10, width=300, height=30)
 entry_third_number.place(relx=0.5, rely=0.5, anchor=CENTER)
 
-calculate_button = customtkinter.CTkButton(window, text="Determine", text_color="black", font=('Open Sans', 20, 'bold'), command="", fg_color="#E1A3FF", width=300, height=30)
-calculate_button.place(relx=0.5, rely=0.6, anchor=CENTER)
+determine_button = customtkinter.CTkButton(window, text="Determine", text_color="black", font=('Open Sans', 20, 'bold'), command= determine, fg_color="#E1A3FF", width=300, height=30)
+determine_button.place(relx=0.5, rely=0.6, anchor=CENTER)
 
 frame_result = customtkinter.CTkFrame(window, border_width=2, border_color="black", width=320, height=140)
 frame_result.place(relx=0.5, rely=0.81, anchor=CENTER)
