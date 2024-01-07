@@ -18,6 +18,10 @@ window.resizable(width=False, height=False)
 
 # Functions
 def determine():
+    if any (entry == "" for entry in (entry_first_number.get(), entry_second_number.get(), entry_third_number.get())):
+            messagebox.showerror("Error", "Please enter all the field.")
+            return
+     
     first_number = float(entry_first_number.get())
     second_number = float(entry_second_number.get())
     third_number = float(entry_third_number.get())
@@ -25,9 +29,6 @@ def determine():
     
     
     def highest_of_three(first_number, second_number, third_number):
-        if any (entry == "" for entry in (entry_first_number.get(), entry_second_number.get(), entry_third_number.get())):
-            messagebox.showerror("Error", "Please enter all the field.")
-
         if first_number >= second_number and first_number >= third_number:
             return first_number
         elif second_number >= first_number and second_number >= third_number:
