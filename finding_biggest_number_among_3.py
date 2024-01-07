@@ -85,6 +85,6 @@ highest_number_label.place(relx=0.5, rely=0.65, anchor=CENTER)
 # highest_number = highest_of_three(first_number, second_number, third_number)
 
 # # Diplay the highest number
-# print(f"The highest number is {highest_number:.2f}")
+# print("The highest number is ", highest_number)")
 
 window.mainloop()
