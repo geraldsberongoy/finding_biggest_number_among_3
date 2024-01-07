@@ -62,8 +62,11 @@ entry_third_number = customtkinter.CTkEntry(window, placeholder_text="Enter the 
 entry_third_number.place(relx=0.5, rely=0.5, anchor=CENTER)
 
  # Function inside the command button that finds the highest among the inputted numbers using if-else statement
-determine_button = customtkinter.CTkButton(window, text="Determine", text_color="black", font=('Open Sans', 20, 'bold'), command= determine, fg_color="#E1A3FF", width=300, height=30)
-determine_button.place(relx=0.5, rely=0.6, anchor=CENTER)
+determine_button = customtkinter.CTkButton(window, text="Determine", text_color="black", font=('Helvetica', 15, "bold"), command= determine, fg_color="#bb86fc", width=145, height=30)
+determine_button.place(relx=0.27, rely=0.6, anchor=CENTER)
+
+clear_button = customtkinter.CTkButton(window, text="Clear", text_color="white", font=('Helvetica', 15, "bold"), command="", fg_color="#3a2d49", width=145, height=30)
+clear_button.place(relx=0.72, rely=0.6, anchor=CENTER) 
 
 # Frame for the result
 frame_result = customtkinter.CTkFrame(window, border_width=2, border_color="black", width=320, height=140)
