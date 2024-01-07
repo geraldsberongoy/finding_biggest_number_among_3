@@ -6,6 +6,7 @@
 #import
 import customtkinter
 from tkinter import *
+from tkinter import messagebox
 from PIL import Image
 
 customtkinter.set_appearance_mode("dark")
@@ -20,6 +21,7 @@ def determine():
     first_number = float(entry_first_number.get())
     second_number = float(entry_second_number.get())
     third_number = float(entry_third_number.get())
+    messagebox.showinfo("Submitted", "The highest number has been determined.")
     
     
     def highest_of_three(first_number, second_number, third_number):
