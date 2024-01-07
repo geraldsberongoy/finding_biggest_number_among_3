@@ -20,9 +20,9 @@ entry_first_number.place(relx=0.5, rely=0.3, anchor=CENTER)
 
 # Functions
 def highest_of_three(first_number, second_number, third_number):
-    if first_number > second_number or first_number > third_number:
+    if first_number >= second_number and first_number >= third_number:
         return first_number
-    elif second_number > first_number or second_number> third_number:
+    elif second_number >= first_number and second_number >= third_number:
         return second_number
     else:
         return third_number
