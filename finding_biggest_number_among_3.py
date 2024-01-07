@@ -48,7 +48,7 @@ frame_result.place(relx=0.5, rely=0.81, anchor=CENTER)
 result_label = customtkinter.CTkLabel(frame_result, text="Result", font=('Helvetica', 26, 'bold'))
 result_label.place(relx=0.5, rely=0.12, anchor=CENTER)
 
-number_text_label = customtkinter.CTkLabel(frame_result, text="The highest number is:")
+number_text_label = customtkinter.CTkLabel(frame_result, text="")
 number_text_label.place(relx=0.5, rely=0.4, anchor=CENTER)
 # pseudocode
 # Ask user to input number 1
