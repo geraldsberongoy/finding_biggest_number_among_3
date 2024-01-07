@@ -6,6 +6,7 @@
 #import
 import customtkinter
 from tkinter import *
+from PIL import Image
 
 
 customtkinter.set_appearance_mode("dark")
@@ -14,6 +15,12 @@ window = customtkinter.CTk()
 window.title("Highest Number")
 window.geometry("360x480")
 window.resizable(width=False, height=False)
+
+# GUI WIDGETS
+
+banner_image = customtkinter.CTkImage(Image.open("banner.png"), size=(320, 100))
+label_banner_image = customtkinter.CTkLabel(window, text="", image=banner_image, corner_radius=100)
+label_banner_image.place(relx=0.5, rely=0.13, anchor=CENTER)
 
 entry_first_number = customtkinter.CTkEntry(window, placeholder_text="Enter the first number", placeholder_text_color="white"	, corner_radius=10, width=300, height=30)
 entry_first_number.place(relx=0.5, rely=0.3, anchor=CENTER)
